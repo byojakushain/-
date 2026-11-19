@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haruna Akase | 自己紹介</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <h1 class="logo">Haruna Akase</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-btn" aria-label="テーマ切り替え">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ヒーローセクション -->
+    <section class="hero">
+      <div class="container">
+        <div class="avatar">👩‍💻</div>
+        <h2>こんにちは、<span class="highlight">赤瀬 陽南</span> です</h2>
+        <p class="typing-text">私は <span id="typing"></span></p>
+        <a href="#contact" class="btn">お問い合わせ</a>
+      </div>
+    </section>
+
+    <!-- 自己紹介セクション -->
+    <section id="about" class="section">
+      <div class="container">
+        <h3 class="section-title">About Me</h3>
+        <div class="card">
+          <p>
+            Web開発やデザインに興味を持ち、日々学習を続けています。<br>
+            ユーザーにとって使いやすく、心地よいWebサイトを作ることが目標です。
+          </p>
+          <ul class="profile-list">
+            <li><strong>名前：</strong>赤瀬 陽南（Haruna Akase）</li>
+            <li><strong>趣味：</strong>プログラミング、カフェ巡り、読書</li>
+            <li><strong>目標：</strong>オリジナルのWebサービスを公開すること</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- スキルセクション -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h3 class="section-title">Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4>HTML / CSS</h4>
+            <p>レスポンシブ対応やモダンなレイアウト設計が可能です。</p>
+          </div>
+          <div class="skill-card">
+            <h4>JavaScript</h4>
+            <p>DOM操作やアニメーションなど、動きのあるUIを実装できます。</p>
+          </div>
+          <div class="skill-card">
+            <h4>Git / GitHub</h4>
+            <p>ソースコードのバージョン管理やチーム開発の基礎を理解しています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h3 class="section-title">Contact</h3>
+
+        <!-- 直接連絡できるメールアドレス欄を追加 -->
+        <div class="contact-direct card">
+          <p>メールでの直接のご連絡はこちら：</p>
+          <a href="mailto:haruna2001.com@gmail.com" class="email-link">haruna2001.com@gmail.com</a>
+        </div>
+
+        <form id="contact-form" class="card form">
+          <div class="form-group">
+            <label for="name">お名前</label>
+            <input type="text" id="name" required placeholder="例：佐藤 花子">
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" required placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message">メッセージ</label>
+            <textarea id="message" rows="4" required placeholder="お気軽にご連絡ください"></textarea>
+          </div>
+          <button type="submit" class="btn">送信する</button>
+          <p id="form-result" class="form-result"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Haruna Akase. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
